@@ -1,0 +1,8 @@
+﻿namespace API.Models.FilterModels
+{
+    public class UserFilter
+    {
+        public DateTime? InsertDateFrom { get; set; }
+        public DateTime? InsertDateTo { get; set; }
+    }
+}
