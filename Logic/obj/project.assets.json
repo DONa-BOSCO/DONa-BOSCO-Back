@@ -1319,6 +1319,19 @@
         "runtime": {
           "bin/placeholder/Entities.dll": {}
         }
+      },
+      "Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resources.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resources.dll": {}
+        }
       }
     }
   },
@@ -3869,13 +3882,19 @@
       "type": "project",
       "path": "../Entities/Entities.csproj",
       "msbuildProject": "../Entities/Entities.csproj"
+    },
+    "Resources/1.0.0": {
+      "type": "project",
+      "path": "../Resources/Resources.csproj",
+      "msbuildProject": "../Resources/Resources.csproj"
     }
   },
   "projectFileDependencyGroups": {
     "net6.0": [
       "BCrypt.Net-Next >= 4.0.3",
       "Data >= 1.0.0",
-      "Entities >= 1.0.0"
+      "Entities >= 1.0.0",
+      "Resources >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -3888,7 +3907,7 @@
       "projectName": "Logic",
       "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj",
       "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Logic\\obj\\",
+      "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -3910,6 +3929,9 @@
             },
             "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
               "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj"
+            },
+            "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\Resources.csproj": {
+              "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\Resources.csproj"
             }
           }
         }

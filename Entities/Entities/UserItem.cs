@@ -14,6 +14,9 @@ namespace Entities.Entities
         public int Age { get; set; }
         public string? ShippingAddress { get; set; }
         public string? PhoneNumber { get; set; }
+        public string EncryptedPassword { get; set; }
+        public string EncryptedToken { get; set; }
+        public DateTime TokenExpireDate { get; set; }
         public DateTime InsertDate { get; set; }
         public DateTime UpdateDate { get; set; }
         public bool IsActive { get; set; }

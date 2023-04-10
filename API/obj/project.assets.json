@@ -2780,7 +2780,8 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Data": "1.0.0",
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "Resources": "1.0.0"
         },
         "compile": {
           "bin/placeholder/Logic.dll": {}
@@ -2789,10 +2790,24 @@
           "bin/placeholder/Logic.dll": {}
         }
       },
+      "Resources/1.0.0": {
+        "type": "project",
+        "framework": ".NETCoreApp,Version=v6.0",
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "compile": {
+          "bin/placeholder/Resources.dll": {}
+        },
+        "runtime": {
+          "bin/placeholder/Resources.dll": {}
+        }
+      },
       "Security/1.0.0": {
         "type": "project",
         "framework": ".NETCoreApp,Version=v6.0",
         "dependencies": {
+          "BCrypt.Net-Next": "4.0.3",
           "Logic": "1.0.0"
         },
         "compile": {
@@ -8614,6 +8629,11 @@
       "type": "project",
       "path": "../Logic/Logic.csproj",
       "msbuildProject": "../Logic/Logic.csproj"
+    },
+    "Resources/1.0.0": {
+      "type": "project",
+      "path": "../Resources/Resources.csproj",
+      "msbuildProject": "../Resources/Resources.csproj"
     },
     "Security/1.0.0": {
       "type": "project",
