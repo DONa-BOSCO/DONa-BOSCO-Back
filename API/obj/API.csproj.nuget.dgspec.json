@@ -89,7 +89,7 @@
         "projectName": "Data",
         "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -231,7 +231,7 @@
         "projectName": "Logic",
         "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -299,7 +299,7 @@
         "projectName": "Security",
         "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
