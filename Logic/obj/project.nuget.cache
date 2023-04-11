@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "LotfO6QmljDat1snY31RhgtywBQe7YVq3geldDC47wMl772Tpoic04mmAcuzT0BwhuHJw8Azbo+c4gsV5bumBg==",
+  "dgSpecHash": "5mALPRuxglSbLjYJz6uhIh8UJAlPT542OKNMJvNZRYLS72WLtqo7HmSwbjoswvqPfmvDNLNNMxt6q2rRhnf56g==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Logic\\Logic.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {}
+    "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Entities\\Entities.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
+    "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonABosco\\DonABosco\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
