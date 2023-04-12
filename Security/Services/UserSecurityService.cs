@@ -1,20 +1,29 @@
-﻿using API.IServices;
-using Data;
-using Entities.Entities;
-using Logic.ILogic;
+﻿using Logic.ILogic;
+using Security.IServices;
 
-namespace Apii.Services
+namespace Security.Services
 {
-    public class SecurityService : ISecurityService
+    public class UserSecurityService : IUserSecurityService
     {
-        private readonly ISecurityLogic _securityLogic;
-        public SecurityService(ISecurityLogic securityLogic)
+        private readonly IUserSecurityLogic _userSecurityLogic;
+        public UserSecurityService(IUserSecurityLogic userSecurityLogic)
         {
-            _securityLogic = securityLogic;
+            _userSecurityLogic = userSecurityLogic;
         }
-        public bool ValidateUserCredentials(string userName, string userPassWord, int IdRol)
+        public string GenerateAuthorizationToken(string userName, string userPassword)
         {
-            return _securityLogic.ValidateUserCredentials(userName, userPassWord, IdRol);
+            return _userSecurityLogic.GenerateAuthorizationToken(userName, userPassword);
+        }
+        public bool ValidateUserToken(string authorization, string controller, string action, string method)
+        {
+            var indexToSplit = authorization.IndexOf(':');
+            var userName = authorization.Substring(7, indexToSplit - 7);
+            var token = authorization.Substring(indexToSplit + 1, authorization.Length - userName.Length - 8);
+            return _userSecurityLogic.ValidateUserToken(userName, token, controller, action, method);
+        }
+        public void ValidateUserTokenFromAttribute(string authorization, List<string> authorizedRols, bool authorizedAnonymous)
+        {
+            throw new NotImplementedException();
         }
     }
 }
