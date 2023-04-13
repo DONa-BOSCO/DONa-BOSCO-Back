@@ -18,3 +18,7 @@ C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\En
 C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.dll
 C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\ref\Entities.dll

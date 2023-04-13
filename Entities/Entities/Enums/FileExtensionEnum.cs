@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace Resources.Enums
+namespace API.Enums
 {
     public enum FileExtensionEnum
     {

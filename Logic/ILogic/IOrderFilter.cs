@@ -1,6 +1,6 @@
 ﻿namespace Logic.ILogic
 {
-    public class OrderFilter
+    public class IOrderFilter
     {
  
         public DateTime? OrderDateFrom { get; set; }

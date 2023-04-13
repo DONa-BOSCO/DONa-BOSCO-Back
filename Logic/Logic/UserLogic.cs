@@ -29,10 +29,12 @@ namespace Logic.Logic
                 .Where(u => u.IsActive == true)
                 .ToList();
         }
-        public List<UserItem> GetUsersByCriteria(UserFilter userFilter)
+
+
+        public List<UserItem> GetUsersByCriteria(IUserFilter userFilter)
         {
             var resultList = _serviceContext.Set<UserItem>()
-                                .Where(u => u.IsActive == true);
+                               .Where(u => u.IsActive == true);
 
             if (userFilter.InsertDateFrom != null)
             {
@@ -46,6 +48,7 @@ namespace Logic.Logic
 
             return resultList.ToList();
         }
+
         public int InsertUser(UserItem userItem)
         {
             //if (userItem.IdRol == (int)UserEnums.Administrador)

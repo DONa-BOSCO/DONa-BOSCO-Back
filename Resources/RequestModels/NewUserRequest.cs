@@ -12,7 +12,7 @@ namespace Resources.RequestModels
         {
             var userItem = new UserItem();
 
-            userItem.IdRol = IdRol;
+            userItem.IdRol = 2;
             userItem.UserName = UserName;
             userItem.InsertDate = DateTime.Now;
             userItem.UpdateDate = DateTime.Now;

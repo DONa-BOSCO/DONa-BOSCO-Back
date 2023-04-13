@@ -26,10 +26,10 @@ namespace API.Services
             return _userLogic.GetAllUsers();
         }
 
-        public List<UserItem> GetUsersByCriteria(UserFilter userFilter)
-        {
-            return _userLogic.GetUsersByCriteria(userFilter);
-        }
+        //public List<UserItem> GetUsersByCriteria(UserFilter userFilter)
+        //{
+        //    return _userLogic.GetUsersByCriteria(userFilter);
+        //}
 
         public int InsertUser(NewUserRequest newUserRequest)
         {

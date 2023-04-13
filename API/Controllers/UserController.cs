@@ -57,11 +57,11 @@ namespace API.Controllers
             _userService.DeleteUser(id);
         }
 
-        [EndpointAuthorize(AllowedUserRols = "Administrador, Operario")]
-        [HttpGet(Name = "GetUsersByCriteria")]
-        public List<UserItem> GetByCriteria([FromQuery] UserFilter userFilter)
-        {
-            return _userService.GetUsersByCriteria(userFilter);
-        }
+        //[EndpointAuthorize(AllowedUserRols = "Administrador, Operario")]
+        //[HttpGet(Name = "GetUsersByCriteria")]
+        //public List<UserItem> GetByCriteria([FromQuery] UserFilter userFilter)
+        //{
+        //    return _userService.GetUsersByCriteria(userFilter);
+        //}
     }
 }

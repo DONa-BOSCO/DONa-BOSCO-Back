@@ -1606,10 +1606,19 @@
         "dependencies": {
           "BCrypt.Net-Next": "4.0.3",
           "Data": "1.0.0",
-          "Entities": "1.0.0"
+          "Entities": "1.0.0",
+          "Resources": "1.0.0"
         },
         "runtime": {
           "Logic.dll": {}
+        }
+      },
+      "Resources/1.0.0": {
+        "dependencies": {
+          "Entities": "1.0.0"
+        },
+        "runtime": {
+          "Resources.dll": {}
         }
       },
       "Security/1.0.0": {
@@ -2724,6 +2733,11 @@
       "sha512": ""
     },
     "Logic/1.0.0": {
+      "type": "project",
+      "serviceable": false,
+      "sha512": ""
+    },
+    "Resources/1.0.0": {
       "type": "project",
       "serviceable": false,
       "sha512": ""
