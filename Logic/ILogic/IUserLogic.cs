@@ -1,6 +1,5 @@
 ﻿using Entities.Entities;
-using API.Models;
-
+using Resources.FilterModels;
 
 namespace Logic.ILogic
 {
@@ -9,7 +8,6 @@ namespace Logic.ILogic
         int InsertUser(UserItem userItem);
         void UpdateUser(UserItem userItem);
         void DeleteUser(int id);
-        void DeactivateUser(int id);
         List<UserItem> GetAllUsers();
         List<UserItem> GetUsersByCriteria(UserFilter userFilter);
     }

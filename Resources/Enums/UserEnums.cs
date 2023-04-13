@@ -2,8 +2,7 @@
 {
     public enum UserEnums
     {
-        Administrator = 1,
-        User = 2,
+        Administrador = 1,
+        Operario = 2,
     }
-
 }

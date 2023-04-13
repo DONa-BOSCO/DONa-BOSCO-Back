@@ -9,6 +9,7 @@
   <ItemGroup>
     <Folder Include="FiltersModels\" />
     <Folder Include="RequestModels\" />
+	  <ProjectReference Include="..\Entities\Entities.csproj" />
   </ItemGroup>
 
 </Project>

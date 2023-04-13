@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj": {}
+    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj": {
+    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\obj\\",
+        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\API\\API.csproj",
+        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj"
               },
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\Logic.csproj"
               },
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Security\\Security.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Security\\Security.csproj"
               }
             }
           }
@@ -78,21 +78,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj": {
+    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\obj\\",
+        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -106,8 +106,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj"
               }
             }
           }
@@ -165,21 +165,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
+    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -220,21 +220,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj": {
+    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\Logic.csproj",
         "projectName": "Logic",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\obj\\",
+        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\Logic.csproj",
+        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -248,14 +248,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj"
               },
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj"
               },
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\Resources.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\Resources.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Resources\\Resources.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Resources\\Resources.csproj"
               }
             }
           }
@@ -291,21 +291,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\Resources.csproj": {
+    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Resources\\Resources.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\Resources.csproj",
+        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Resources\\Resources.csproj",
         "projectName": "Resources",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\Resources.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Resources\\obj\\",
+        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Resources\\Resources.csproj",
+        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Resources\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -319,8 +319,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj"
               }
             }
           }
@@ -350,21 +350,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj": {
+    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Security\\Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj",
+        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Security\\Security.csproj",
         "projectName": "Security",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj",
-        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\obj\\",
+        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Security\\Security.csproj",
+        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -378,8 +378,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj"
+              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Logic\\Logic.csproj"
               }
             }
           }
@@ -393,12 +393,6 @@
       "frameworks": {
         "net6.0": {
           "targetAlias": "net6.0",
-          "dependencies": {
-            "BCrypt.Net-Next": {
-              "target": "Package",
-              "version": "[4.0.3, )"
-            }
-          },
           "imports": [
             "net461",
             "net462",
@@ -415,7 +409,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
         }
       }
     }

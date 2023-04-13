@@ -1,0 +1,5 @@
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Resources\obj\Debug\net6.0\Resources.csproj.AssemblyReference.cache
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Resources\obj\Debug\net6.0\Resources.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Resources\obj\Debug\net6.0\Resources.AssemblyInfoInputs.cache
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Resources\obj\Debug\net6.0\Resources.AssemblyInfo.cs
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Resources\obj\Debug\net6.0\Resources.csproj.CoreCompileInputs.cache

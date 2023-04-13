@@ -1,23 +1,19 @@
 ﻿using API.IServices;
-using API.Models;
-using Data;
 using Entities.Entities;
 using Logic.ILogic;
-using Logic.Logic;
-
+using Resources.FilterModels;
+using Resources.RequestModels;
 
 namespace API.Services
 {
     public class UserService : IUserService
     {
         private readonly IUserLogic _userLogic;
-        private readonly ServiceContext _serviceContext;
-        //private readonly IUserSecurityLogic _userSecurityLogic;
-        public UserService(ServiceContext serviceContext, IUserLogic userLogic)
+        private readonly IUserSecurityLogic _userSecurityLogic;
+        public UserService(IUserLogic userLogic, IUserSecurityLogic userSecurityLogic)
         {
             _userLogic = userLogic;
-            _serviceContext = serviceContext;
-            //_userSecurityLogic = userSecurityLogic;
+            _userSecurityLogic = userSecurityLogic;
         }
 
         public void DeleteUser(int id)
@@ -35,21 +31,16 @@ namespace API.Services
             return _userLogic.GetUsersByCriteria(userFilter);
         }
 
-        int IUserService.InsertUser(UserItem userItem)
+        public int InsertUser(NewUserRequest newUserRequest)
         {
-            _serviceContext.Users.Add(userItem);
-            _serviceContext.SaveChanges();
-            return userItem.Id;
+            var newUserItem = newUserRequest.ToUserItem();
+            newUserItem.EncryptedPassword = _userSecurityLogic.HashString(newUserRequest.Password);
+            return _userLogic.InsertUser(newUserItem);
         }
 
         public void UpdateUser(UserItem userItem)
         {
             _userLogic.UpdateUser(userItem);
-        }
-
-        void IUserService.DeactivateUser(int id)
-        {
-            _userLogic.DeactivateUser(id);
         }
     }
 }
