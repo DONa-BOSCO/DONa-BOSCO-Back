@@ -26,6 +26,8 @@ namespace API.Attributes
             var authorizedRols = authorizeAttribute.NamedArguments.Where(a => a.MemberName == "AllowedUserRols").FirstOrDefault().TypedValue.Value;
             var authorizedAnonymous = authorizeAttribute.NamedArguments.Where(a => a.MemberName == "AllowsAnonymous").FirstOrDefault().TypedValue.Value;
 
+          
+
             try
             {
                 if (authorizedRols != null)
@@ -42,7 +44,7 @@ namespace API.Attributes
                 }
                 else
                 {
-                    Values.AllowsAnonymous = false;
+                    Values.AllowsAnonymous = true;
                 }
             }
             catch
@@ -57,7 +59,7 @@ namespace API.Attributes
         public EndpointAuthorizeAttributeValues()
         {
             AllowedUserRols = new List<string>();
-            AllowsAnonymous = false;
+            AllowsAnonymous = true;
         }
         public bool AllowsAnonymous { get; set; }
         public List<string> AllowedUserRols { get; set; }

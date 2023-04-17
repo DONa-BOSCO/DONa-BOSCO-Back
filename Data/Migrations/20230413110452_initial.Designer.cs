@@ -12,8 +12,8 @@ using Microsoft.EntityFrameworkCore.Storage.ValueConversion;
 namespace Data.Migrations
 {
     [DbContext(typeof(ServiceContext))]
-    [Migration("20230413100759_Second")]
-    partial class Second
+    [Migration("20230413110452_initial")]
+    partial class initial
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -192,7 +192,7 @@ namespace Data.Migrations
 
                     b.HasKey("Id");
 
-                    b.ToTable("t_user_rols", (string)null);
+                    b.ToTable("t_userRol", (string)null);
                 });
 
             modelBuilder.Entity("Entities.Entities.OrderItem", b =>
