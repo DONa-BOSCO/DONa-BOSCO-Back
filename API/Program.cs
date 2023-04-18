@@ -69,16 +69,16 @@ builder.Services.AddScoped<IOrderLogic, OrderLogic>();
 builder.Services.AddDbContext<ServiceContext>(
         options => options.UseSqlServer("name=ConnectionStrings:ServiceContext"));
 
-builder.Services.AddCors(options =>
-{
-    options.AddPolicy("AllowAll",
-    builder =>
-    {
-        builder.AllowAnyOrigin()
-     .AllowAnyMethod()
-    .AllowAnyHeader();
-    });
-});
+//builder.Services.AddCors(options =>
+//{
+//    options.AddPolicy("AllowAll",
+//    builder =>
+//    {
+//        builder.AllowAnyOrigin()
+//     .AllowAnyMethod()
+//    .AllowAnyHeader();
+//    });
+//});
 
 var app = builder.Build();
 

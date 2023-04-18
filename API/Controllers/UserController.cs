@@ -1,4 +1,5 @@
-﻿using API.Attributes;
+﻿using System.Web.Http.Cors;
+using API.Attributes;
 using API.IServices;
 using Entities.Entities;
 using Microsoft.AspNetCore.Authorization;
@@ -8,6 +9,7 @@ using Resources.RequestModels;
 
 namespace API.Controllers
 {
+    
     [ApiController]
     [Route("[controller]/[action]")]
     public class UserController : ControllerBase

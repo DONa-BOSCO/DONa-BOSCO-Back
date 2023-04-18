@@ -11,6 +11,7 @@ using Base64FileModel = Entities.Entities.Base64FileModel;
 
 namespace API.Controllers
 {
+    
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     [Route("[controller]/[action]")]
     public class ProductController : ControllerBase
