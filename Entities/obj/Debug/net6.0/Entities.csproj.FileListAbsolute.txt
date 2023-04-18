@@ -10,3 +10,27 @@ C:\Users\USUARIO\Desktop\DonaBosco\DonaBosco\Entities\obj\Debug\net6.0\Entities.
 C:\Users\USUARIO\Desktop\DonaBosco\DonaBosco\Entities\obj\Debug\net6.0\refint\Entities.dll
 C:\Users\USUARIO\Desktop\DonaBosco\DonaBosco\Entities\obj\Debug\net6.0\Entities.pdb
 C:\Users\USUARIO\Desktop\DonaBosco\DonaBosco\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\Entities\obj\Debug\net6.0\ref\Entities.dll
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\bin\Debug\net6.0\Entities.deps.json
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\bin\Debug\net6.0\Entities.dll
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\bin\Debug\net6.0\Entities.pdb
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\Entities.csproj.AssemblyReference.cache
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\Entities.GeneratedMSBuildEditorConfig.editorconfig
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\Entities.AssemblyInfoInputs.cache
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\Entities.AssemblyInfo.cs
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\Entities.csproj.CoreCompileInputs.cache
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\Entities.dll
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\refint\Entities.dll
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\Entities.pdb
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\Entities\obj\Debug\net6.0\ref\Entities.dll

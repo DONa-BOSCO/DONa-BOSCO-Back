@@ -6,7 +6,7 @@ using Microsoft.AspNetCore.Mvc.Filters;
 using System.Collections.Generic;
 using Logic.ILogic;
 using API.Models.FilterModels;
-using OrderFilter = Logic.ILogic.OrderFilter;
+using OrderFilter = Logic.ILogic.IOrderFilter;
 
 namespace API.IServices
 {

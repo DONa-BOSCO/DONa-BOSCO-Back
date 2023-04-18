@@ -1,6 +1,8 @@
-﻿using API.IServices;
+﻿using API.Attributes;
+using API.IServices;
 using API.Models;
 using Entities.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Web.Http.Cors;
@@ -9,6 +11,7 @@ using Base64FileModel = Entities.Entities.Base64FileModel;
 
 namespace API.Controllers
 {
+    
     [EnableCors(origins: "*", headers: "*", methods: "*")]
     [Route("[controller]/[action]")]
     public class ProductController : ControllerBase
@@ -79,6 +82,8 @@ namespace API.Controllers
             _productService.DeactivateProduct(id);
         }
 
+
+        [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpGet(Name = "GetAllProduct")]
         public List<ProductInfoModel> GetAllProduct()
         {
@@ -108,12 +113,13 @@ namespace API.Controllers
                 }
 
                 return resultList;
-
             }
             catch (Exception ex) { throw; }
 
         }
 
+
+        [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPost(Name = "AddProduct")]
         public int AddProduct([FromBody] NewProductRequest newProductRequest)
         {
