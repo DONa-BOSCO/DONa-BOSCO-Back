@@ -28,7 +28,7 @@ namespace API.Controllers
         public string Login([FromBody] LoginRequest loginRequest)
         {
 
-            return _userSecurityService.GenerateAuthorizationToken(loginRequest.UserName, loginRequest.UserPassword);
+            return _userSecurityService.GenerateAuthorizationToken(loginRequest.Email, loginRequest.UserPassword);
         }
 
         [EndpointAuthorize(AllowsAnonymous = true)]
