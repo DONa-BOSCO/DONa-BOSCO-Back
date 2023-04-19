@@ -15,6 +15,7 @@ namespace Entities.Entities
         }
 
         public int Id { get; set; }
+      
         public int IdPhotoFile { get; set; }
         public Guid IdWeb { get; set; }
         public string Title { get; set; }

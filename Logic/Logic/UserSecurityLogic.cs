@@ -15,10 +15,10 @@ namespace Logic.Logic
             _serviceContext = serviceContext;
         }
 
-        public string GenerateAuthorizationToken(string userName, string userPassword)
+        public string GenerateAuthorizationToken(string email, string userPassword)
         {
             var user = _serviceContext.Set<UserItem>()
-                     .Where(u => u.UserName == userName).SingleOrDefault();
+                     .Where(u => u.Email == email).SingleOrDefault();
 
             if (user == null)
             {
@@ -49,10 +49,10 @@ namespace Logic.Logic
             return BCrypt.Net.BCrypt.HashPassword(key);
         }
 
-        public bool ValidateUserToken(string userName, string token, List<string> authorizedRols)
+        public bool ValidateUserToken(string email, string token, List<string> authorizedRols)
         {
             var user = _serviceContext.Set<UserItem>()
-                     .Where(u => u.UserName == userName).FirstOrDefault();
+                     .Where(u => u.Email == email).FirstOrDefault();
 
             if (user == null)
             {

@@ -11,15 +11,15 @@ namespace API.Services
         {
             _userSecurityLogic = userSecurityLogic;
         }
-        public string GenerateAuthorizationToken(string userName, string userPassword)
+        public string GenerateAuthorizationToken(string email, string userPassword)
         {
-            return _userSecurityLogic.GenerateAuthorizationToken(userName, userPassword);
+            return _userSecurityLogic.GenerateAuthorizationToken(email, userPassword);
         }
         public bool ValidateUserToken(string authorization, List<string> authorizedRols)
         {
-            var userName = GetUserNameFromAuthorization(authorization);
+            var email = GetUserNameFromAuthorization(authorization);
             var token = GetTokenFromAuthorization(authorization);
-            return _userSecurityLogic.ValidateUserToken(userName, token, authorizedRols);
+            return _userSecurityLogic.ValidateUserToken(email, token, authorizedRols);
         }
         private string GetUserNameFromAuthorization(string authorization)
         {
@@ -29,8 +29,8 @@ namespace API.Services
         private string GetTokenFromAuthorization(string authorization)
         {
             var indexToSplit = authorization.IndexOf(':');
-            var userName = authorization.Substring(7, indexToSplit - 7);
-            return authorization.Substring(indexToSplit + 1, authorization.Length - userName.Length - 8);
+            var email = authorization.Substring(7, indexToSplit - 7);
+            return authorization.Substring(indexToSplit + 1, authorization.Length - email.Length - 8);
         }
     }
 }

@@ -1,20 +1,20 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj": {}
   },
   "projects": {
-    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\Data.csproj",
-        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Data\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -28,8 +28,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj"
               }
             }
           }
@@ -87,21 +87,21 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     },
-    "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\Entities.csproj",
-        "packagesPath": "C:\\Users\\mazdi\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\mazdi\\Downloads\\factoriaf5\\DONa-Bosco-Back\\Entities\\obj\\",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj",
+        "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
-          "C:\\Users\\mazdi\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -142,7 +142,7 @@
               "privateAssets": "all"
             }
           },
-          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.102\\RuntimeIdentifierGraph.json"
+          "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.101\\RuntimeIdentifierGraph.json"
         }
       }
     }
