@@ -32,13 +32,13 @@ namespace API.Controllers
         //{
         //    return _productService.GetProductByCriteria(productFilter);
         //}
-
+        [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpGet(Name = "GetProductById")]
         public List<ProductItem> GetProductById([FromQuery] int id)
         {
             return _productService.GetProductById(id);
         }
-
+        [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPatch(Name = "UpdateProduct")]
         public void UpdateProduct([FromBody] NewProductRequest newProductRequest)
         {
@@ -69,13 +69,13 @@ namespace API.Controllers
                 throw;
             }
         }
-
+        [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpDelete(Name = "DeleteProduct")]
         public void Delete([FromQuery] int id)
         {
             _productService.DeleteProduct(id);
         }
-
+        [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpDelete(Name = "DeactivateProduct")]
         public void DeactivateProduct([FromQuery] int id)
         {
