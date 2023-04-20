@@ -37,7 +37,6 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 | Product     | Add/Insert/Post |   
 | File        | Update/Patch    |   
 | UserRol     | Deactivate      |    
-| Orders      | Delete          |   
 |             | GetById         | 
 |             | GetByCriteria   |
 
@@ -45,9 +44,9 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 
 <h2 align="center">  🧪Next Steps:</h2>
 
-<p align="center"> - Implement security architecture with Admin/User validation and permissions </p>
-<p align="center"> - Development of new methods and entities in accord to new functionalities </p> 
-<p align="center"> - Improve File management system </p>  
+<p align="center"> - Text </p>
+<p align="center"> - Text </p> 
+<p align="center"> - Text </p>  
 
 <h2> 👩‍ 💻Group members:</h2>
 
