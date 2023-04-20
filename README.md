@@ -1,6 +1,6 @@
 # DONa-Bosco-Back# 
 
- <h2 align="center"> :kimono: Welcome to DONa BOSCOs</h2>
+ <h2 align="center">  Welcome to DONa BOSCOs</h2>
  <div align="center"><img src="https://user-images.githubusercontent.com/117834362/232772720-66bf2d7e-8e03-41be-9ee4-bc8930a5b2e6.png"></div>
 
  
