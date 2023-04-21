@@ -44,7 +44,8 @@ namespace API.Attributes
                 }
                 else
                 {
-                    Values.AllowsAnonymous = true;
+                    //ACASO CORREGIR EN TODOS LOS EQUIPOS!
+                    Values.AllowsAnonymous = false;
                 }
             }
             catch
