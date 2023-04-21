@@ -1,6 +1,7 @@
 ﻿using System.Web.Http.Cors;
 using API.Attributes;
 using API.IServices;
+using API.Services;
 using Entities.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
@@ -25,10 +26,13 @@ namespace API.Controllers
 
         [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPost(Name = "LoginUser")]
-        public string Login([FromBody] LoginRequest loginRequest)
+        public Tuple<string,int> Login([FromBody] LoginRequest loginRequest)
         {
-
-            return _userSecurityService.GenerateAuthorizationToken(loginRequest.Email, loginRequest.UserPassword);
+            var usersData = _userService.GetAllUsers();
+            UserItem user=usersData.Where(user=> user.Email == loginRequest.Email).First();
+            int IdRol=user.IdRol;
+            string token = _userSecurityService.GenerateAuthorizationToken(loginRequest.Email, loginRequest.UserPassword);
+            return new Tuple<string, int>(token, IdRol); 
         }
 
         [EndpointAuthorize(AllowsAnonymous = true)]
