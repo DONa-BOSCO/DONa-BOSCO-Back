@@ -63,6 +63,13 @@ namespace API.Controllers
             _userService.DeleteUser(id);
         }
 
+        // Endpoint para obtener el número de usuarios registrados
+        [HttpGet("users/count")]
+        public IActionResult GetUserCount()
+        {
+            int userCount = // Lógica para obtener el número de usuarios registrados en la aplicación
+        return Ok(userCount);
+        }
         //[EndpointAuthorize(AllowedUserRols = "Administrador, Operario")]
         //[HttpGet(Name = "GetUsersByCriteria")]
         //public List<UserItem> GetByCriteria([FromQuery] UserFilter userFilter)
