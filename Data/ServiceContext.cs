@@ -37,6 +37,7 @@ namespace Data
             {
                 product.ToTable("t_products");
                 //product.HasOne<FileItem>().WithMany().HasForeignKey(u => u.IdPhotoFile);
+                product.HasOne<UserItem>(p => p.User).WithMany(u => u.Products).HasForeignKey(p => p.UserId).OnDelete(DeleteBehavior.Cascade);
             }
             );
 

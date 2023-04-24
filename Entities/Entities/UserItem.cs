@@ -2,6 +2,10 @@
 {
     public class UserItem
     {
+        public UserItem()
+        {
+            Products = new List<ProductItem>();
+        }
         public int Id { get; set; }
         public int IdRol { get; set; }
 
@@ -18,5 +22,7 @@
         public string EncryptedPassword { get; set; }
         public string EncryptedToken { get; set; }
         public DateTime TokenExpireDate { get; set; }
+
+        public virtual ICollection<ProductItem> Products { get; set; } // nueva propiedad
     }
 }

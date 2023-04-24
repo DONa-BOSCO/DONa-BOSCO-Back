@@ -24,6 +24,12 @@ namespace Entities.Entities
         public string Condition { get; set; }
         public string Location { get; set; }
 
+        public int UserId { get; set; } // nueva propiedad
+
+        [ForeignKey("UserId")]
+        public virtual UserItem User { get; set; } // nueva propiedad
+
+
         public bool IsActive { get; set; }
         public bool IsPublic { get; set; }
 
