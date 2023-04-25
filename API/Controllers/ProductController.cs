@@ -1,10 +1,14 @@
 ﻿using API.Attributes;
 using API.IServices;
 using API.Models;
+using API.Services;
+using Data;
 using Entities.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
+using Resources.RequestModels;
 using System.Web.Http.Cors;
 using static Entities.Entities.ProductItem;
 using Base64FileModel = Entities.Entities.Base64FileModel;
@@ -16,15 +20,20 @@ namespace API.Controllers
     [Route("[controller]/[action]")]
     public class ProductController : ControllerBase
     {
-
+        private readonly ServiceContext _serviceContext;
         private readonly IProductService _productService;
         private readonly IFileService _fileService;
+        private readonly IUserService _userService;
 
-
-        public ProductController(IProductService productService, IFileService fileService)
+        public ProductController(ServiceContext serviceContext,
+                                IProductService productService,
+                                IFileService fileService,
+                                IUserService userService)
         {
+            _serviceContext = serviceContext;
             _productService = productService;
             _fileService = fileService;
+            _userService = userService;
         }
 
         //[HttpGet(Name = "GetProductByCriteria")]
@@ -121,7 +130,7 @@ namespace API.Controllers
 
         [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPost(Name = "AddProduct")]
-        public int AddProduct([FromBody] NewProductRequest newProductRequest)
+        public async Task<int> AddProduct([FromBody] NewProductRequest newProductRequest)
         {
             try
             {
@@ -133,7 +142,12 @@ namespace API.Controllers
                 fileItem.UpdateDate = DateTime.Now;
                 fileItem.Content = Convert.FromBase64String(newProductRequest.FileData.Base64FileContent);
 
-                var fileId = _fileService.InsertFile(fileItem);
+                var fileId =  _fileService.InsertFile(fileItem);
+
+                var userId = await _serviceContext.Set<UserItem>()
+                .Where(u => u.Id == newProductRequest.UserId)
+                .Select(u => u.Id)
+                .FirstOrDefaultAsync();
 
                 var productItem = new ProductItem();
                 productItem.Id = newProductRequest.ProductData.Id;
@@ -142,7 +156,12 @@ namespace API.Controllers
                 productItem.Category = newProductRequest.ProductData.Category;
                 productItem.Condition = newProductRequest.ProductData.Condition;
                 productItem.Location = newProductRequest.ProductData.Location;
+                productItem.UserId = userId;
                 productItem.IdPhotoFile = fileId;
+
+
+             
+
                 return _productService.AddProduct(productItem);
             }
             catch (Exception)

@@ -29,15 +29,17 @@ namespace Data
             builder.Entity<UserItem>(user =>
             {
                 user.ToTable("t_users");
+                builder.Entity<UserItem>().HasKey(u => u.Id);
                 user.HasOne<UserRolItem>().WithMany().HasForeignKey(u => u.IdRol);
-                //user.HasOne<UserRolItem>().WithMany().HasForeignKey(u => u.Rol);
+                
             });
 
             builder.Entity<ProductItem>(product =>
-            {
+            {   
                 product.ToTable("t_products");
+                builder.Entity<ProductItem>().HasKey(p => p.Id);
                 //product.HasOne<FileItem>().WithMany().HasForeignKey(u => u.IdPhotoFile);
-                product.HasOne<UserItem>(p => p.User).WithMany(u => u.Products).HasForeignKey(p => p.UserId).OnDelete(DeleteBehavior.Cascade);
+                product.HasOne<UserItem>().WithMany().HasForeignKey(p => p.UserId);
             }
             );
 
@@ -47,17 +49,6 @@ namespace Data
                 user.Property(r => r.Id).ValueGeneratedNever();
             });
 
-            //builder.Entity<AuthorizationItem>(user =>
-            //{
-            //    user.ToTable("t_endpoint_authorizations");
-            //});
-
-            //builder.Entity<RolAuthorization>(user =>
-            //{
-            //    user.ToTable("t_rols_authorizations");
-            //    user.HasOne<UserRolItem>().WithMany().HasForeignKey(a => a.IdRol);
-            //    user.HasOne<AuthorizationItem>().WithMany().HasForeignKey(a => a.IdAuthorization);
-            //});
 
             builder.Entity<FileItem>(user =>
             {

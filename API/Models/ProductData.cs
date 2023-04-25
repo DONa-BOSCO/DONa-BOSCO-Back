@@ -1,5 +1,6 @@
 ﻿using Entities.Entities;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace API.Models
 {
@@ -15,6 +16,7 @@ namespace API.Models
         public int UserId { get; set; } // nueva propiedad
 
         [ForeignKey("UserId")]
+        [JsonIgnore]
         public virtual UserItem User { get; set; } // nueva propiedad
 
     }

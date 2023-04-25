@@ -4,5 +4,7 @@
     {
         public ProductData ProductData { get; set; }
         public FileData FileData { get; set; }
+
+        public int UserId { get; set; }
     }
 }

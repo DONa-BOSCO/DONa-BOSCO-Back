@@ -24,6 +24,8 @@ namespace API.Models
         public DateTime InsertDate = DateTime.Now;
         public DateTime UpdateDate = DateTime.Now; 
         public bool IsActive { get; set; }
-       
+
+        public virtual ICollection<ProductItem> Products { get; set; }
+
     }
 }

@@ -1,6 +1,7 @@
 ﻿
 using API.Enums;
 using System.ComponentModel.DataAnnotations.Schema;
+using System.Text.Json.Serialization;
 
 namespace Entities.Entities
 {
@@ -22,11 +23,12 @@ namespace Entities.Entities
         public string Description { get; set; }
         public string Category { get; set; }
         public string Condition { get; set; }
-        public string Location { get; set; }
+        public string? Location { get; set; }
 
         public int UserId { get; set; } // nueva propiedad
 
         [ForeignKey("UserId")]
+        [JsonIgnore]
         public virtual UserItem User { get; set; } // nueva propiedad
 
 
@@ -35,8 +37,7 @@ namespace Entities.Entities
 
         public DateTime UpdateDate { get; set; }
         public DateTime AddedDate { get; set; }
-        //[NotMapped]
-        //public Base64FileModel Base64FileModel { get; set; }
+       
         
     }
     public class Base64FileModel
