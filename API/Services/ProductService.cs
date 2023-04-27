@@ -55,5 +55,62 @@ namespace API.Services
             _serviceContext.SaveChanges();
             return productItem.Id;
         }
+
+
+        public int InsertProduct(ProductItem productItem)
+        {
+            if (!ValidateModel(productItem))
+            {
+                throw new InvalidDataException();
+            }
+            _productLogic.InsertProduct(productItem);
+            if (!ValidateInsertedProduct(productItem))
+
+            {
+                throw new InvalidOperationException();
+            }
+            return productItem.Id;
+        }
+
+        public static bool ValidateModel(ProductItem productItem)
+        {
+
+            if (productItem == null)
+            {
+                return false;
+            }
+            if (productItem.IdPhotoFile < 1)
+            {
+                return false; ;
+            }
+            if (productItem.Title == null || productItem.Title == "")
+            {
+                return false; ;
+            }
+            if (productItem.Description == null || productItem.Description == "")
+            {
+                return false; ;
+            }
+            if (productItem.AddedDate > DateTime.Now)
+            {
+                return false; ;
+            }
+            return true;
+        }
+
+        public static bool ValidateInsertedProduct(ProductItem productItem)
+        {
+            if (!ValidateModel(productItem))
+
+            {
+                return false;
+            }
+            if (productItem.Id < 1)
+            {
+                return false;
+            }
+            return true;
+        }
+
     }
 }

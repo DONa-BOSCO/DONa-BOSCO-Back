@@ -49,6 +49,11 @@ namespace Logic.Logic
             return _serviceContext.Set<ProductItem>().ToList();
         }
 
+        public void InsertProduct(ProductItem productItem)
+        {
+            throw new NotImplementedException();
+        }
+
         //public List<ProductItem> GetProductByCriteria(ProductFilter productFilter)
         //{
         //    var resultList = _serviceContext.Set<ProductItem>()
