@@ -8,5 +8,6 @@
         public string Category { get; set; }
         public string Condition { get; set; }
         public string Location { get; set; }
+        public string Email { get; set; }
     }
 }

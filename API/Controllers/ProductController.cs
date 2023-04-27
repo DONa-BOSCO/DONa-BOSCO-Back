@@ -49,6 +49,7 @@ namespace API.Controllers
                 productItem.Category = newProductRequest.ProductData.Category;
                 productItem.Condition = newProductRequest.ProductData.Condition;
                 productItem.Location = newProductRequest.ProductData.Location;
+                productItem.Email = newProductRequest.ProductData.Email; //mail
                 productItem.IdPhotoFile = fileId;
                 _productService.UpdateProduct(productItem);
             }
@@ -109,7 +110,8 @@ namespace API.Controllers
                 productItem.Description = newProductRequest.ProductData.Description;
                 productItem.Category = newProductRequest.ProductData.Category;
                 productItem.Condition = newProductRequest.ProductData.Condition;
-                productItem.Location = newProductRequest.ProductData.Location;
+                productItem.Location = newProductRequest.ProductData.Location; //email
+                productItem.Email = newProductRequest.ProductData.Email;
                 productItem.IdPhotoFile = fileId;
                 return _productService.AddProduct(productItem);
             }
