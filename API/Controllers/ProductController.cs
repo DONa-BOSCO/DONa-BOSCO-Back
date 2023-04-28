@@ -1,12 +1,16 @@
-﻿using API.IServices;
+﻿using API.Attributes;
+using API.IServices;
 using API.Models;
 using Entities.Entities;
+using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Cors;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
 using System.Web.Http.Cors;
 using static Entities.Entities.ProductItem;
 using Base64FileModel = Entities.Entities.Base64FileModel;
+using EnableCorsAttribute = System.Web.Http.Cors.EnableCorsAttribute;
+
 namespace API.Controllers
 {
     [EnableCors(origins: "*", headers: "*", methods: "*")]
@@ -92,6 +96,8 @@ namespace API.Controllers
             }
             catch (Exception ex) { throw; }
         }
+
+        [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPost(Name = "AddProduct")]
         public int AddProduct([FromBody] NewProductRequest newProductRequest)
         {

@@ -9,6 +9,7 @@
       "API/1.0.0": {
         "dependencies": {
           "Data": "1.0.0",
+          "Entities": "1.0.0",
           "Logic": "1.0.0",
           "Microsoft.AspNet.WebApi.Cors": "5.2.9",
           "Security": "1.0.0",
