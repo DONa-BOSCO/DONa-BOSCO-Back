@@ -9,7 +9,6 @@ C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.Interface.dll
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\net6.0\Microsoft.VisualStudio.TestPlatform.MSTestAdapter.PlatformServices.dll
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\net6.0\Microsoft.TestPlatform.AdapterUtilities.dll
-C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\net6.0\appsettings.json
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\net6.0\UniTest.deps.json
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\net6.0\UniTest.runtimeconfig.json
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\UniTest\bin\Debug\net6.0\UniTest.dll
