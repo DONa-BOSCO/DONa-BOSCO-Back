@@ -24,6 +24,8 @@ namespace Entities.Entities
         public string Condition { get; set; }
         public string Location { get; set; }
 
+        public string Email { get; set; }
+
         public bool IsActive { get; set; }
         public bool IsPublic { get; set; }
 

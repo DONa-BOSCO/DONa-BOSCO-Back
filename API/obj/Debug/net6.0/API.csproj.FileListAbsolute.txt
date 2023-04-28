@@ -218,7 +218,6 @@ C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\API\obj\Debug\net6.0\API.gen
 C:\Users\mazdi\Downloads\factoriaf5\DONa-Bosco-Back\API\obj\Debug\net6.0\ref\API.dll
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\bin\Debug\net6.0\appsettings.Development.json
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\bin\Debug\net6.0\API.exe
-C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\bin\Debug\net6.0\appsettings.json
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\bin\Debug\net6.0\API.deps.json
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\bin\Debug\net6.0\API.runtimeconfig.json
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\bin\Debug\net6.0\API.dll
@@ -326,3 +325,4 @@ C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\obj\Debug\net6
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\obj\Debug\net6.0\API.pdb
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\obj\Debug\net6.0\API.genruntimeconfig.cache
 C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\obj\Debug\net6.0\ref\API.dll
+C:\Users\USUARIO\Documents\FEMCODERS\PROYECTOS\DonaBosco back\API\bin\Debug\net6.0\appsettings.json

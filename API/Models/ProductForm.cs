@@ -11,6 +11,8 @@ namespace API.Models
         public string Category { get; set; }
         public string Condition { get; set; }
         public string Location { get; set; }
+
+        public string Email { get; set; }
         public ProductItem ToProductItem()
             {
             ProductItem productItem = new ProductItem();
@@ -20,6 +22,7 @@ namespace API.Models
             productItem.Category = Category;
             productItem.Condition = Condition;
             productItem.Location = Location;
+            productItem.Email = Email;
 
 
 
