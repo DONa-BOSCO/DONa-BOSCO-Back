@@ -10,6 +10,7 @@ namespace API.Models
             IsActive = true;
             IdRol = 2; 
         }
+        public int Id { get; set; }
         public int IdRol { get; set; }
 
         public string FirstName { get; set; }
@@ -19,7 +20,9 @@ namespace API.Models
         public string UserName { get; set; }
         public string? Email { get; set; }
         public string Password { get; set; }
-       
+
+        public virtual ICollection<ProductItem> Product { get; set; }
+
 
         public DateTime InsertDate = DateTime.Now;
         public DateTime UpdateDate = DateTime.Now; 

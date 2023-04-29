@@ -1,4 +1,6 @@
-﻿namespace API.Models
+﻿using Entities.Entities;
+
+namespace API.Models
 {
     public class ProductData
     {
@@ -10,5 +12,11 @@
         public string Location { get; set; }
 
         public string Email { get; set; }
+
+        public int UserId { get; set; }
+
+
+
+
     }
 }

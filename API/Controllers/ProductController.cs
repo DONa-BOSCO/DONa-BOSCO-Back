@@ -1,10 +1,12 @@
 ﻿using API.Attributes;
 using API.IServices;
 using API.Models;
+using Data;
 using Entities.Entities;
 using Microsoft.AspNetCore.Authorization;
 using Microsoft.AspNetCore.Mvc;
 using Microsoft.AspNetCore.Mvc.Filters;
+using Microsoft.EntityFrameworkCore;
 using System.Web.Http.Cors;
 using static Entities.Entities.ProductItem;
 using Base64FileModel = Entities.Entities.Base64FileModel;
@@ -19,19 +21,17 @@ namespace API.Controllers
 
         private readonly IProductService _productService;
         private readonly IFileService _fileService;
+        private readonly ServiceContext _serviceContext;
 
 
-        public ProductController(IProductService productService, IFileService fileService)
+
+        public ProductController(IProductService productService, IFileService fileService,ServiceContext serviceContext)
         {
             _productService = productService;
             _fileService = fileService;
+            _serviceContext = serviceContext;
         }
 
-        //[HttpGet(Name = "GetProductByCriteria")]
-        //public List<ProductItem> GetByCriteria([FromQuery] ProductFilter productFilter)
-        //{
-        //    return _productService.GetProductByCriteria(productFilter);
-        //}
         [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpGet(Name = "GetProductById")]
         public List<ProductItem> GetProductById([FromQuery] int id)
@@ -122,7 +122,7 @@ namespace API.Controllers
 
         [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPost(Name = "AddProduct")]
-        public int AddProduct([FromBody] NewProductRequest newProductRequest)
+        public async Task <int> AddProduct([FromBody] NewProductRequest newProductRequest)
         {
             try
             {
@@ -136,6 +136,12 @@ namespace API.Controllers
 
                 var fileId = _fileService.InsertFile(fileItem);
 
+                var UserId = await _serviceContext.Set<UserItem>()
+                .Where(u => u.Email == newProductRequest.ProductData.Email)
+                .Select(u => u.Id)
+                .FirstOrDefaultAsync();
+
+
                 var productItem = new ProductItem();
                 productItem.Id = newProductRequest.ProductData.Id;
                 productItem.Title = newProductRequest.ProductData.Title;
@@ -145,6 +151,11 @@ namespace API.Controllers
                 productItem.Location = newProductRequest.ProductData.Location;
                 productItem.Email = newProductRequest.ProductData.Email;
                 productItem.IdPhotoFile = fileId;
+                productItem.UserId = UserId;
+
+
+
+
                 return _productService.AddProduct(productItem);
             }
             catch (Exception)
