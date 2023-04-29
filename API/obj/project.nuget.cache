@@ -1,8 +1,8 @@
 {
   "version": 2,
-  "dgSpecHash": "z9K6OPsh017gmx5GNbfzzVi4V/Ao7OXTeACLYqolSBRrup9GT5aL9luds2k79ZmJB6Z+/xMJob51vjJDtWJYeQ==",
+  "dgSpecHash": "O/0eFxN76guLsKyBjTw4Lmq70Ln9c8oRFfr7rBpycammHwsFscYL3kroa6Rt9BMb0F++7c8jLrpXPzN6hleJ5w==",
   "success": true,
-  "projectFilePath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj",
+  "projectFilePath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\API.csproj",
   "expectedPackageFiles": [
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.core\\1.24.0\\azure.core.1.24.0.nupkg.sha512",
     "C:\\Users\\USUARIO\\.nuget\\packages\\azure.identity\\1.6.0\\azure.identity.1.6.0.nupkg.sha512",

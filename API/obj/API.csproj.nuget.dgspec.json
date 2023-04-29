@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj": {}
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\API.csproj": {}
   },
   "projects": {
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\API.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\API.csproj",
         "projectName": "API",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\API.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\API.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\API\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -28,14 +28,14 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj"
               },
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\Logic.csproj"
               },
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Security\\Security.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Security\\Security.csproj"
               }
             }
           }
@@ -82,14 +82,14 @@
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj",
         "projectName": "Data",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -106,8 +106,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj"
               }
             }
           }
@@ -169,14 +169,14 @@
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj",
         "projectName": "Entities",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -224,14 +224,14 @@
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\Logic.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\Logic.csproj",
         "projectName": "Logic",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\Logic.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -248,11 +248,11 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Data\\Data.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Data\\Data.csproj"
               },
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Entities\\Entities.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Entities\\Entities.csproj"
               }
             }
           }
@@ -292,14 +292,14 @@
         }
       }
     },
-    "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj": {
+    "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Security\\Security.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj",
+        "projectUniqueName": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Security\\Security.csproj",
         "projectName": "Security",
-        "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\Security.csproj",
+        "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Security\\Security.csproj",
         "packagesPath": "C:\\Users\\USUARIO\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Security\\obj\\",
+        "outputPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Security\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\USUARIO\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -316,8 +316,8 @@
           "net6.0": {
             "targetAlias": "net6.0",
             "projectReferences": {
-              "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj": {
-                "projectPath": "C:\\Users\\USUARIO\\Desktop\\DonaBosco\\DonaBosco\\Logic\\Logic.csproj"
+              "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\Logic.csproj": {
+                "projectPath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\Logic\\Logic.csproj"
               }
             }
           }
