@@ -42,5 +42,53 @@ namespace API.Services
         {
             _userLogic.UpdateUser(userItem);
         }
+
+        public int InsertUser(UserItem userItem)
+        {
+            if (!ValidateModel(userItem))
+            {
+                throw new InvalidDataException();
+            }
+            _userLogic.InsertUser(userItem);
+            if (!ValidateInsertedEvent(userItem))
+
+            {
+                throw new InvalidOperationException();
+            }
+            return userItem.IdRol;
+
+
+        }
+
+        public static bool ValidateModel(UserItem userItem)
+        {
+
+            if (userItem == null)
+            {
+                return false;
+            }
+
+            if (userItem.UserName == null || userItem.UserName == "")
+            {
+                return false; ;
+            }
+
+
+            return true;
+        }
+
+        public static bool ValidateInsertedEvent(UserItem userItem)
+        {
+            if (!ValidateModel(userItem))
+
+            {
+                return false;
+            }
+            if (userItem.IdRol < 1)
+            {
+                return false;
+            }
+            return true;
+        }
     }
 }

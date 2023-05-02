@@ -19,6 +19,8 @@ namespace API.IServices
             void DeleteProduct(int id);
             void UpdateProduct(ProductItem productItem);
 
+            int InsertProduct(ProductItem productItem);
+
             List<ProductItem> GetProductsByUserId(int userId);
 
     }

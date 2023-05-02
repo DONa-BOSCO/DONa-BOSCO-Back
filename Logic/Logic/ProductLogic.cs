@@ -56,24 +56,10 @@ namespace Logic.Logic
        .ToList();
         }
 
-        //public List<ProductItem> GetProductByCriteria(ProductFilter productFilter)
-        //{
-        //    var resultList = _serviceContext.Set<ProductItem>()
-        //                        .Where(p => p.IsActive == true);
-
-        //    if (productFilter.InsertDateFrom != null)
-        //    {
-        //        resultList = resultList.Where(p => p.AddedDate > productFilter.InsertDateFrom);
-        //    }
-
-        //    if (productFilter.InsertDateTo != null)
-        //    {
-        //        resultList = resultList.Where(p => p.AddedDate < productFilter.InsertDateTo);
-        //    }
-
-        //    return resultList.ToList();
-        //}
-
+        public void InsertProduct(ProductItem productItem)
+        {
+            throw new NotImplementedException();
+        }
 
         public void UpdateProduct(ProductItem productItem)
         {
