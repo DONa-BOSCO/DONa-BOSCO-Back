@@ -1,9 +1,14 @@
 # DONa-Bosco-Back# 
 
- <h2 align="center">  Welcome to DONa BOSCOs</h2>
- <div align="center"><img src="https://user-images.githubusercontent.com/117834362/232772720-66bf2d7e-8e03-41be-9ee4-bc8930a5b2e6.png"></div>
-
  
+ <h2 align="center">  Welcome to DONa BOSCOs Back</h2>
+ <div align="center"><img src="https://user-images.githubusercontent.com/117834362/232772720-66bf2d7e-8e03-41be-9ee4-bc8930a5b2e6.png"></div>
+ 
+ <h2 align="center"> :chart: Flowchart Back</h2>
+ <div align="center"><img src="https://user-images.githubusercontent.com/117834362/235647743-aa0a484f-5abd-45fb-be2a-86a3288d70bb.png"></div>
+
+
+
 <h2 align="center"> :computer: How to install the project (Back) </h2>
 <p align="center> This section demonstrates how to set up your own local database and how to connect it to the API we developed specifically for DONa-Bosco-Front project to use. 
 It must be noted that, even though the DONa-Bosco-Front project may be run using json-server, it is highly recommended to set it up using DONa-Bosco-Back project.   </h3> 
@@ -43,6 +48,10 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 > Note that not every entity has all built-in methods in this 1.0 version, but may be implemented in future versions according to the clients' needs.
 
 
+                 
+           
+       
+                  
 <h2 align="center"> 👀  Testing:</h2>
 <p align="center">  </p> 
 <p align="center"> Try running npm run test  </p> 
