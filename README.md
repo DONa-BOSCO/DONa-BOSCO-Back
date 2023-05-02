@@ -36,11 +36,16 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 | User        | GetAll          | 
 | Product     | Add/Insert/Post |   
 | File        | Update/Patch    |   
-| UserRol     | Deactivate      |    
+| UserItem    | Deactivate      |    
 |             | GetById         | 
 |             | GetByCriteria   |
 
-> Note that not every entity has all built-in methods in this 1.0 version, but may be implemented in future versions according to the clients' needs. 
+> Note that not every entity has all built-in methods in this 1.0 version, but may be implemented in future versions according to the clients' needs.
+
+
+<h2 align="center"> 👀  Testing:</h2>
+<p align="center">  </p> 
+<p align="center"> Try running npm run test  </p> 
 
 <h2 align="center">  🧪Next Steps:</h2>
 
