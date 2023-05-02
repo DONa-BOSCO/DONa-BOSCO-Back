@@ -26,13 +26,14 @@ namespace API.Controllers
 
         [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPost(Name = "LoginUser")]
-        public Tuple<string,int> Login([FromBody] LoginRequest loginRequest)
+        public Tuple<string,int, int> Login([FromBody] LoginRequest loginRequest)
         {
             var usersData = _userService.GetAllUsers();
             UserItem user=usersData.Where(user=> user.Email == loginRequest.Email).First();
             int IdRol=user.IdRol;
+            int UserId = user.Id;
             string token = _userSecurityService.GenerateAuthorizationToken(loginRequest.Email, loginRequest.UserPassword);
-            return new Tuple<string, int>(token, IdRol); 
+            return new Tuple<string, int, int>(token, IdRol, UserId); 
         }
 
         [EndpointAuthorize(AllowsAnonymous = true)]

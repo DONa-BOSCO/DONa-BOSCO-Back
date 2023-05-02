@@ -49,6 +49,13 @@ namespace Logic.Logic
             return _serviceContext.Set<ProductItem>().ToList();
         }
 
+        public List<ProductItem> GetProductsByUserId(int userId)
+        {
+            return _serviceContext.Set<ProductItem>()
+       .Where(p => p.UserId == userId)
+       .ToList();
+        }
+
         //public List<ProductItem> GetProductByCriteria(ProductFilter productFilter)
         //{
         //    var resultList = _serviceContext.Set<ProductItem>()

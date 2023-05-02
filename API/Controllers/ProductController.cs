@@ -119,6 +119,45 @@ namespace API.Controllers
 
         }
 
+        [EndpointAuthorize(AllowsAnonymous = true)]
+        [HttpGet(Name = "GetProductsByUserId")]
+        public ActionResult<List<ProductInfoModel>> GetProductsByUserId(int userId)
+        {
+            try
+            {
+                var fileList = _fileService.GetAllImagesList();
+                // Get the list of all products for the given user id
+                var productList = _productService.GetProductsByUserId(userId);
+
+                // Create a list to hold the result items
+                List<ProductInfoModel> resultList = new List<ProductInfoModel>();
+
+                // Iterate over each product and create the corresponding result item
+                foreach (var prod in productList)
+                {
+                    ProductInfoModel resultItem = new ProductInfoModel();
+                    resultItem.ProducItem = prod;
+
+                    var fileItem = fileList.Where(f => f.Id == prod.IdPhotoFile).First();
+
+                    Base64FileModel fileModel = new Base64FileModel();
+                    fileModel.FileName = fileItem.Name;
+                    fileModel.FileExtension = fileItem.FileExtension;
+                    fileModel.Content = fileItem.Base64Content;
+
+                    resultItem.Base64FileModel = fileModel;
+
+                    resultList.Add(resultItem);
+                }
+
+                return resultList;
+            }
+            catch (Exception ex)
+            {
+                // Return a 500 Internal Server Error with the exception message
+                return StatusCode(500, ex.Message);
+            }
+        }
 
         [EndpointAuthorize(AllowsAnonymous = true)]
         [HttpPost(Name = "AddProduct")]

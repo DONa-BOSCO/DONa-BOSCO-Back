@@ -18,6 +18,8 @@ namespace API.IServices
             void DeactivateProduct(int id);
             void DeleteProduct(int id);
             void UpdateProduct(ProductItem productItem);
-       
+
+            List<ProductItem> GetProductsByUserId(int userId);
+
     }
 }

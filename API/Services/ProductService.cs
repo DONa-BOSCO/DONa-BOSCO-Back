@@ -55,5 +55,10 @@ namespace API.Services
             _serviceContext.SaveChanges();
             return productItem.Id;
         }
+
+        public List<ProductItem> GetProductsByUserId(int userId)
+        {
+            return _productLogic.GetProductsByUserId(userId);
+        }
     }
 }
