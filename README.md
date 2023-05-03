@@ -27,7 +27,7 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 
 6. Gheck the connection is active in the Server Explorer </p> 
 
-7. Link al archivo de google drive (adm)
+7. Link to the file of the queries needed to add an administrator https://drive.google.com/file/d/1nnnfS_3gr-ZbH6xeH-voPqHl6lV_Tuv7/view?usp=sharing
 
 8. All set! Build DONa-Bosco-Back solution and run _npm run dev_ command in DONa-Bosco-Front project </p> 
 
