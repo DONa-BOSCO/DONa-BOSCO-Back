@@ -1,6 +1,6 @@
 ﻿using API.Models;
 using Entities.Entities;
-using Entities.Relations;
+//using Entities.Relations;
 using Microsoft.EntityFrameworkCore;
 using Microsoft.EntityFrameworkCore.Design;
 using Microsoft.Extensions.Configuration;
@@ -10,6 +10,7 @@ using System.Linq;
 using System.Reflection.Emit;
 using System.Text;
 using System.Threading.Tasks;
+using Entities.Entities;
 
 namespace Data
 {
@@ -18,10 +19,9 @@ namespace Data
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
         public DbSet<UserItem> Users { get; set; }
         public DbSet<ProductItem> Products { get; set; }
-        public DbSet<AuthorizationItem> UserAuthorizations { get; set; }
-        public DbSet<RolAuthorization> RolsAuthorizations { get; set; }
+       
         public DbSet<FileItem> Files { get; set; }
-        public DbSet<UserRolItem> UserRol { get; set; }
+       
         public DbSet<OrderItem> Orders { get; set; }
         protected override void OnModelCreating(ModelBuilder builder)
         {
@@ -29,6 +29,7 @@ namespace Data
             builder.Entity<UserItem>(user =>
             {
                 user.ToTable("t_users");
+                user.HasOne<UserRolItem>().WithMany().HasForeignKey(u => u.IdRol);
                 //user.HasOne<UserRolItem>().WithMany().HasForeignKey(u => u.Rol);
             });
 
@@ -41,20 +42,21 @@ namespace Data
 
             builder.Entity<UserRolItem>(user =>
             {
-                user.ToTable("t_user_rols");
+                user.ToTable("t_userRol");
+                user.Property(r => r.Id).ValueGeneratedNever();
             });
 
-            builder.Entity<AuthorizationItem>(user =>
-            {
-                user.ToTable("t_endpoint_authorizations");
-            });
+            //builder.Entity<AuthorizationItem>(user =>
+            //{
+            //    user.ToTable("t_endpoint_authorizations");
+            //});
 
-            builder.Entity<RolAuthorization>(user =>
-            {
-                user.ToTable("t_rols_authorizations");
-                user.HasOne<UserRolItem>().WithMany().HasForeignKey(a => a.IdRol);
-                user.HasOne<AuthorizationItem>().WithMany().HasForeignKey(a => a.IdAuthorization);
-            });
+            //builder.Entity<RolAuthorization>(user =>
+            //{
+            //    user.ToTable("t_rols_authorizations");
+            //    user.HasOne<UserRolItem>().WithMany().HasForeignKey(a => a.IdRol);
+            //    user.HasOne<AuthorizationItem>().WithMany().HasForeignKey(a => a.IdAuthorization);
+            //});
 
             builder.Entity<FileItem>(user =>
             {
@@ -62,10 +64,7 @@ namespace Data
 
             });
 
-            builder.Entity<UserRolItem>(user =>
-            {
-                user.ToTable("t_userRol");
-            });
+           
             builder.Entity<OrderItem>(order =>
             {
                 order.ToTable("t_orders");

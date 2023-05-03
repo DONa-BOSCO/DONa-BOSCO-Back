@@ -15,6 +15,7 @@ namespace Entities.Entities
         }
 
         public int Id { get; set; }
+
         public int IdPhotoFile { get; set; }
         public Guid IdWeb { get; set; }
         public string Title { get; set; }
@@ -23,6 +24,10 @@ namespace Entities.Entities
         public string Condition { get; set; }
         public string Location { get; set; }
 
+        public int UserId { get; set; }
+
+        public string Email { get; set; }
+
         public bool IsActive { get; set; }
         public bool IsPublic { get; set; }
 
@@ -30,7 +35,7 @@ namespace Entities.Entities
         public DateTime AddedDate { get; set; }
         //[NotMapped]
         //public Base64FileModel Base64FileModel { get; set; }
-        
+
     }
     public class Base64FileModel
     {

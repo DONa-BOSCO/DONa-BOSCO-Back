@@ -1,23 +1,19 @@
 ﻿using API.IServices;
-using API.Models;
-using Data;
 using Entities.Entities;
 using Logic.ILogic;
-using Logic.Logic;
-
+using Resources.FilterModels;
+using Resources.RequestModels;
 
 namespace API.Services
 {
     public class UserService : IUserService
     {
         private readonly IUserLogic _userLogic;
-        private readonly ServiceContext _serviceContext;
-        //private readonly IUserSecurityLogic _userSecurityLogic;
-        public UserService(ServiceContext serviceContext, IUserLogic userLogic)
+        private readonly IUserSecurityLogic _userSecurityLogic;
+        public UserService(IUserLogic userLogic, IUserSecurityLogic userSecurityLogic)
         {
             _userLogic = userLogic;
-            _serviceContext = serviceContext;
-            //_userSecurityLogic = userSecurityLogic;
+            _userSecurityLogic = userSecurityLogic;
         }
 
         public void DeleteUser(int id)
@@ -30,16 +26,16 @@ namespace API.Services
             return _userLogic.GetAllUsers();
         }
 
-        public List<UserItem> GetUsersByCriteria(UserFilter userFilter)
-        {
-            return _userLogic.GetUsersByCriteria(userFilter);
-        }
+        //public List<UserItem> GetUsersByCriteria(UserFilter userFilter)
+        //{
+        //    return _userLogic.GetUsersByCriteria(userFilter);
+        //}
 
-        int IUserService.InsertUser(UserItem userItem)
+        public int InsertUser(NewUserRequest newUserRequest)
         {
-            _serviceContext.Users.Add(userItem);
-            _serviceContext.SaveChanges();
-            return userItem.Id;
+            var newUserItem = newUserRequest.ToUserItem();
+            newUserItem.EncryptedPassword = _userSecurityLogic.HashString(newUserRequest.Password);
+            return _userLogic.InsertUser(newUserItem);
         }
 
         public void UpdateUser(UserItem userItem)
@@ -47,9 +43,52 @@ namespace API.Services
             _userLogic.UpdateUser(userItem);
         }
 
-        void IUserService.DeactivateUser(int id)
+        public int InsertUser(UserItem userItem)
         {
-            _userLogic.DeactivateUser(id);
+            if (!ValidateModel(userItem))
+            {
+                throw new InvalidDataException();
+            }
+            _userLogic.InsertUser(userItem);
+            if (!ValidateInsertedEvent(userItem))
+
+            {
+                throw new InvalidOperationException();
+            }
+            return userItem.IdRol;
+
+
+        }
+
+        public static bool ValidateModel(UserItem userItem)
+        {
+
+            if (userItem == null)
+            {
+                return false;
+            }
+
+            if (userItem.UserName == null || userItem.UserName == "")
+            {
+                return false; ;
+            }
+
+
+            return true;
+        }
+
+        public static bool ValidateInsertedEvent(UserItem userItem)
+        {
+            if (!ValidateModel(userItem))
+
+            {
+                return false;
+            }
+            if (userItem.IdRol < 1)
+            {
+                return false;
+            }
+            return true;
         }
     }
 }

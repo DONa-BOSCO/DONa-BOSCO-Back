@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "O/0eFxN76guLsKyBjTw4Lmq70Ln9c8oRFfr7rBpycammHwsFscYL3kroa6Rt9BMb0F++7c8jLrpXPzN6hleJ5w==",
+  "dgSpecHash": "32B4eh9Igf4IV5K3uYlZAGC1txgRb0b+iZ0PuuBwhZV8XOeYKBb/qViOrID+fhi5taOeGtAD7LrTIXFLiclVMw==",
   "success": true,
   "projectFilePath": "C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\API.csproj",
   "expectedPackageFiles": [
@@ -161,6 +161,12 @@
     "C:\\Users\\USUARIO\\.nuget\\packages\\system.xml.xmldocument\\4.3.0\\system.xml.xmldocument.4.3.0.nupkg.sha512"
   ],
   "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\USUARIO\\Documents\\FEMCODERS\\PROYECTOS\\DonaBosco back\\API\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    },
     {
       "code": "NU1701",
       "level": "Warning",

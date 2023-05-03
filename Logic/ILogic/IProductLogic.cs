@@ -17,5 +17,9 @@ namespace Logic.ILogic
         void DeactivateProduct(int id);
         void DeleteProduct(int id);
         void UpdateProduct(ProductItem productItem);
+
+        void InsertProduct(ProductItem productItem);
+
+        List<ProductItem> GetProductsByUserId(int userId);
     }
 }
