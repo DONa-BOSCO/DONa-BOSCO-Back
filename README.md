@@ -27,7 +27,9 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 
 6. Gheck the connection is active in the Server Explorer </p> 
 
-7. All set! Build DONa-Bosco-Back solution and run _npm run dev_ command in DONa-Bosco-Front project </p> 
+7. Link al archivo de google drive (adm)
+
+8. All set! Build DONa-Bosco-Back solution and run _npm run dev_ command in DONa-Bosco-Front project </p> 
 
 > While connecting the project to your database, note that your *Data source=...* and *initial catalog=...* corresponds to the name of your computer and the name of your database respectively.  
 
