@@ -62,9 +62,9 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 
 <h2 align="center">  🧪Next Steps:</h2>
 
-<p align="center"> - Text </p>
-<p align="center"> - Text </p> 
-<p align="center"> - Text </p>  
+<p align="center"> - It's done Entitity Order although is not implemented </p>
+<p align="center"> - Post entity almost done, pending controller finish </p> 
+
 
 <h2> 👩‍ 💻Group members:</h2>
 
