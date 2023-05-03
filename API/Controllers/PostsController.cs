@@ -40,36 +40,43 @@ namespace API.Controllers
             return await context.Posts.Include(x => x.UserId).FirstOrDefaultAsync(x => x.Id == id); //el include trae data relacionada
         }
         [EndpointAuthorize(AllowsAnonymous = true)]
-        [HttpPost(Name = "Post")]
-        public async Task<ActionResult> AddPost([FromBody] NewPostRequestModel newPostRequestModel)
+        [HttpPost]
+        public async Task<ActionResult> Post(Post post)
         {
-            try
-            {
-
-                //var UserId = await context.Set<UserItem>()
-                //.Where(u => u.Email == newPostRequestModel.PostData.Email)
-                //.Select(u => u.Id)
-                //.FirstOrDefaultAsync();
-
-
-                var post = new Post();
-               post.Id = newPostRequestModel.PostData.Id;
-                post.Title = newPostRequestModel.PostData.Title;
-                post.Description = newPostRequestModel.PostData.Description;
-                //post.Email = newPostRequestModel.PostData.Email;
-                //post.UserId = UserId;
-
-
-
-                await context.Posts.AddAsync(post);
-                await context.SaveChangesAsync();
-                return Ok();
-            }
-            catch (Exception)
-            {
-                throw;
-            }
+            await context.Posts.AddAsync(post);
+            await context.SaveChangesAsync();
+            return Ok();
         }
+        //[HttpPost(Name = "Post")]
+        //public async Task<ActionResult> Post([FromBody] NewPostRequestModel newPostRequestModel)
+        //{
+        //    try
+        //    {
+
+        //        //var UserId = await context.Set<UserItem>()
+        //        //.Where(u => u.Email == newPostRequestModel.PostData.Email)
+        //        //.Select(u => u.Id)
+        //        //.FirstOrDefaultAsync();
+
+
+        //        var post = new Post();
+        //       post.Id = newPostRequestModel.PostData.Id;
+        //        post.Title = newPostRequestModel.PostData.Title;
+        //        post.Description = newPostRequestModel.PostData.Description;
+        //        //post.Email = newPostRequestModel.PostData.Email;
+        //        //post.UserId = UserId;
+
+
+
+        //        await context.Posts.AddAsync(post);
+        //        await context.SaveChangesAsync();
+
+        //    }
+        //    catch (Exception)
+        //    {
+        //        throw;
+        //    }
+        //}
 
 
         [EndpointAuthorize(AllowsAnonymous = true)]
