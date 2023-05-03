@@ -52,8 +52,13 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
        
                   
 <h2 align="center"> 👀  Testing:</h2>
-<p align="center">  </p> 
-<p align="center"> Try running npm run test  </p> 
+<p align="center"> Moq Package Manager: test </p> 
+<p align="center"> Product Service (Validated Model), UserItem (Is Active, Encrypted Password, Validated Model) </p>              
+<div align="center"><img src="https://user-images.githubusercontent.com/117834362/235871147-a36a93bd-9b62-4b72-abb6-0d8f69b813b0.png"></div>
+                                                                                                                                     
+                  
+                                                                                                                   
+                                                                                                                                     
 
 <h2 align="center">  🧪Next Steps:</h2>
 
