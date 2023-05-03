@@ -1,9 +1,14 @@
 # DONa-Bosco-Back# 
 
- <h2 align="center">  Welcome to DONa BOSCOs</h2>
- <div align="center"><img src="https://user-images.githubusercontent.com/117834362/232772720-66bf2d7e-8e03-41be-9ee4-bc8930a5b2e6.png"></div>
-
  
+ <h2 align="center">  Welcome to DONa BOSCOs Back</h2>
+ <div align="center"><img src="https://user-images.githubusercontent.com/117834362/232772720-66bf2d7e-8e03-41be-9ee4-bc8930a5b2e6.png"></div>
+ 
+ <h2 align="center"> :chart: Flowchart Back</h2>
+ <div align="center"><img src="https://user-images.githubusercontent.com/117834362/235647743-aa0a484f-5abd-45fb-be2a-86a3288d70bb.png"></div>
+
+
+
 <h2 align="center"> :computer: How to install the project (Back) </h2>
 <p align="center> This section demonstrates how to set up your own local database and how to connect it to the API we developed specifically for DONa-Bosco-Front project to use. 
 It must be noted that, even though the DONa-Bosco-Front project may be run using json-server, it is highly recommended to set it up using DONa-Bosco-Back project.   </h3> 
@@ -33,20 +38,33 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 
 | Entities    | Methods         |
 | ------------|:---------------:| 
-| User        | GetAll          | 
-| Product     | Add/Insert/Post |   
-| File        | Update/Patch    |   
-| UserRol     | Deactivate      |    
-|             | GetById         | 
-|             | GetByCriteria   |
+| UserRolItem |                                                               | 
+| ProductItem | Add/Insert/Post/GetAll/UpDate/Desactivated/Delete/GetByUserID |   
+| FileItem    | Insert/Delete/GetAll/GetByID                                  |   
+| UserItem    | Insert/Update/Delete/GetAll                                   |    
 
-> Note that not every entity has all built-in methods in this 1.0 version, but may be implemented in future versions according to the clients' needs. 
+
+> Note that not every entity has all built-in methods in this 1.0 version, but may be implemented in future versions according to the clients' needs.
+
+
+                 
+           
+       
+                  
+<h2 align="center"> 👀  Testing:</h2>
+<p align="center"> Moq Package Manager: test </p> 
+<p align="center"> Product Service (Validated Model), UserItem (Is Active, Encrypted Password, Validated Model) </p>              
+<div align="center"><img src="https://user-images.githubusercontent.com/117834362/235871147-a36a93bd-9b62-4b72-abb6-0d8f69b813b0.png"></div>
+                                                                                                                                     
+                  
+                                                                                                                   
+                                                                                                                                     
 
 <h2 align="center">  🧪Next Steps:</h2>
 
-<p align="center"> - Text </p>
-<p align="center"> - Text </p> 
-<p align="center"> - Text </p>  
+<p align="center"> - It's done Entitity Order although is not implemented </p>
+<p align="center"> - Post entity almost done, pending controller finish </p> 
+
 
 <h2> 👩‍ 💻Group members:</h2>
 
