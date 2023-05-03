@@ -38,12 +38,11 @@ It must be noted that, even though the DONa-Bosco-Front project may be run using
 
 | Entities    | Methods         |
 | ------------|:---------------:| 
-| User        | GetAll          | 
-| Product     | Add/Insert/Post |   
-| File        | Update/Patch    |   
-| UserItem    | Deactivate      |    
-|             | GetById         | 
-|             | GetByCriteria   |
+| UserRolItem |                                                               | 
+| ProductItem | Add/Insert/Post/GetAll/UpDate/Desactivated/Delete/GetByUserID |   
+| FileItem    | Insert/Delete/GetAll/GetByID                                  |   
+| UserItem    | Insert/Update/Delete/GetAll                                   |    
+
 
 > Note that not every entity has all built-in methods in this 1.0 version, but may be implemented in future versions according to the clients' needs.
 
