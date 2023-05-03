@@ -82,6 +82,38 @@ namespace Data.Migrations
                     b.ToTable("t_orders", (string)null);
                 });
 
+            modelBuilder.Entity("Entities.Entities.Post", b =>
+                {
+                    b.Property<int>("Id")
+                        .ValueGeneratedOnAdd()
+                        .HasColumnType("int");
+
+                    SqlServerPropertyBuilderExtensions.UseIdentityColumn(b.Property<int>("Id"));
+
+                    b.Property<DateTime>("AddedDate")
+                        .HasColumnType("Datetime");
+
+                    b.Property<string>("Description")
+                        .IsRequired()
+                        .HasColumnType("varchar(500)");
+
+                    b.Property<string>("Title")
+                        .IsRequired()
+                        .HasColumnType("varchar(50)");
+
+                    b.Property<int>("UserId")
+                        .HasColumnType("int");
+
+                    b.Property<int?>("UserItemId")
+                        .HasColumnType("int");
+
+                    b.HasKey("Id");
+
+                    b.HasIndex("UserItemId");
+
+                    b.ToTable("Posts");
+                });
+
             modelBuilder.Entity("Entities.Entities.ProductItem", b =>
                 {
                     b.Property<int>("Id")
@@ -220,6 +252,13 @@ namespace Data.Migrations
                         .IsRequired();
                 });
 
+            modelBuilder.Entity("Entities.Entities.Post", b =>
+                {
+                    b.HasOne("Entities.Entities.UserItem", null)
+                        .WithMany("Posts")
+                        .HasForeignKey("UserItemId");
+                });
+
             modelBuilder.Entity("Entities.Entities.UserItem", b =>
                 {
                     b.HasOne("Entities.Entities.UserRolItem", null)
@@ -227,6 +266,11 @@ namespace Data.Migrations
                         .HasForeignKey("IdRol")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+                });
+
+            modelBuilder.Entity("Entities.Entities.UserItem", b =>
+                {
+                    b.Navigation("Posts");
                 });
 #pragma warning restore 612, 618
         }

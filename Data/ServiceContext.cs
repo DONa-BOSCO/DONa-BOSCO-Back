@@ -18,6 +18,7 @@ namespace Data
     {
         public ServiceContext(DbContextOptions<ServiceContext> options) : base(options) { }
         public DbSet<UserItem> Users { get; set; }
+        public DbSet<Post> Posts { get; set; }
         public DbSet<ProductItem> Products { get; set; }
        
         public DbSet<FileItem> Files { get; set; }

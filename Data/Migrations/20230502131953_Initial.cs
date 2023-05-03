@@ -118,6 +118,33 @@ namespace Data.Migrations
                         onDelete: ReferentialAction.Cascade);
                 });
 
+            migrationBuilder.CreateTable(
+                name: "Posts",
+                columns: table => new
+                {
+                    Id = table.Column<int>(type: "int", nullable: false)
+                        .Annotation("SqlServer:Identity", "1, 1"),
+                    Title = table.Column<string>(type: "varchar(50)", nullable: false),
+                    Description = table.Column<string>(type: "varchar(500)", nullable: false),
+                    AddedDate = table.Column<DateTime>(type: "Datetime", nullable: false),
+                    UserId = table.Column<int>(type: "int", nullable: false),
+                    UserItemId = table.Column<int>(type: "int", nullable: true)
+                },
+                constraints: table =>
+                {
+                    table.PrimaryKey("PK_Posts", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Posts_t_users_UserItemId",
+                        column: x => x.UserItemId,
+                        principalTable: "t_users",
+                        principalColumn: "Id");
+                });
+
+            migrationBuilder.CreateIndex(
+                name: "IX_Posts_UserItemId",
+                table: "Posts",
+                column: "UserItemId");
+
             migrationBuilder.CreateIndex(
                 name: "IX_t_orders_ProductId",
                 table: "t_orders",
@@ -132,6 +159,9 @@ namespace Data.Migrations
         /// <inheritdoc />
         protected override void Down(MigrationBuilder migrationBuilder)
         {
+            migrationBuilder.DropTable(
+                name: "Posts");
+
             migrationBuilder.DropTable(
                 name: "t_files");
 
